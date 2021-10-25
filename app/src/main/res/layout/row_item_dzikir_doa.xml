@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_item"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="@drawable/bg_blue_gray"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_lafaz"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:textColor="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"/>
+
+    <TextView
+        android:id="@+id/tv_terjemah"
+        app:layout_constraintTop_toBottomOf="@id/tv_lafaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textStyle="italic"
+        android:textColor="@color/blue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
